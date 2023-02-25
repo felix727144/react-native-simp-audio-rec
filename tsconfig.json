@@ -2,7 +2,11 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
+<<<<<<< HEAD
       "react-native-simp-audio-rec": ["./src/index","./index"]
+=======
+      "react-native-simp-audio-rec": ["./src/index"]
+>>>>>>> ac68e2a85266bc9e8f6709756670faaac92cc384
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

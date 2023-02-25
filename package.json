@@ -21,7 +21,8 @@
     "!**/__tests__",
     "!**/__fixtures__",
     "!**/__mocks__",
-    "!**/.*"
+    "!**/.*",
+    "index.ts"
   ],
   "scripts": {
     "test": "jest",
@@ -41,7 +42,7 @@
   ],
   "repository": "https://github.com/felix727144/react-native-simp-audio-rec",
   "author": "Felix Lee <felix727144@gmail.com> (https://github.com/felix727144)",
-  "license": "MIT",
+  "license": "BSD 2-Clause License",
   "bugs": {
     "url": "https://github.com/felix727144/react-native-simp-audio-rec/issues"
   },

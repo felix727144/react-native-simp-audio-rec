@@ -5,9 +5,7 @@ import {
   NativeEventEmitter,
 } from 'react-native';
 const { SimpAudioRec } = NativeModules
-const pad = (num: number): string => {
-  return ('0' + num).slice(-2);
-};
+
 
 export type RecordBackType = {
   isRecording?: boolean;
@@ -22,11 +20,9 @@ export type PlayBackType = {
 };
 
 class SimpleAudioRecord {
-  private _isRecording: boolean = false;
   private _recorderSubscription?: EmitterSubscription;
   constructor(){
-    //console.log('SimpleAudioRecord constructor')
-    SimpAudioRec.multiply(10,50)
+    //SimpAudioRec.multiply(10,50)
   }
 
   start = () => {

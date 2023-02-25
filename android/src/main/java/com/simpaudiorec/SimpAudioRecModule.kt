@@ -60,7 +60,6 @@ class SimpAudioRecModule(private val reactContext: ReactApplicationContext) :
   // See https://reactnative.dev/docs/native-modules-android
   @ReactMethod
   fun multiply(a: Double, b: Double, promise: Promise) {
-<<<<<<< HEAD
     FLog.setMinimumLoggingLevel(FLog.VERBOSE)
     FLog.e(tag,"SampAudioRecModule,multiply")
     promise.resolve(a * b)
@@ -160,12 +159,5 @@ class SimpAudioRecModule(private val reactContext: ReactApplicationContext) :
   companion object {
     const val NAME = "SimpAudioRec"
     const val tag="SimpAudRecT"
-=======
-    promise.resolve(a * b)
-  }
-
-  companion object {
-    const val NAME = "SimpAudioRec"
->>>>>>> ac68e2a85266bc9e8f6709756670faaac92cc384
   }
 }

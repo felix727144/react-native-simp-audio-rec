@@ -2,6 +2,7 @@
 
 implement android.media.AudioRecord
 
+IOS just not implemented
 ## Installation
 
 ```sh
@@ -15,7 +16,19 @@ import { multiply } from 'react-native-simp-audio-rec';
 
 // ...
 
-const result = await multiply(3, 7);
+SimpleAudioRecord.checkPermission()
+
+
+this.rec = new SimpleAudioRecord()
+this.rec?.addRecordBackListener((data) => {
+  //console.log('record callback', data.size, data.currentPosition, this.socket)
+  this.socket?.send(Buffer.from(data.data));
+})
+
+
+this.rec?.start();
+
+this.rec?.stop();
 ```
 
 ## Contributing
@@ -24,7 +37,7 @@ See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the 
 
 ## License
 
-MIT
+BSD 2-Clause License
 
 ---
 

@@ -144,7 +144,7 @@ class SimpAudioRecModule(private val reactContext: ReactApplicationContext) :
 
         sendEvent(reactContext, "sar-back", obj)
 
-        recordHandler!!.postDelayed(this, 160)
+        recordHandler!!.postDelayed(this, 10)
       }
     }
     (recorderRunnable as Runnable).run()
